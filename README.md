@@ -11,6 +11,7 @@ Predict NYC 311 requests with adjacent weather data and quantify their impact; e
 - Weather dataset from 2010 to Nov 2018 [here](https://app.box.com/s/k9tnc9tmo9dgjrbm6saw10eigsh39imw)
 
 ## Summary of findings
+- A slide deck of the project can be found [here](https://docs.google.com/presentation/d/1YpVCXMxEA4nlKWsVC60pL23X2LHXiN5JuhDBT-VvzU8/edit?usp=sharing)
 - 311 request volume exhibit a strong intraday and day of the week pattern. This makes it a good candidate for time-series forecasting and a poor one for linear regression models.
 - 311 requests are also heavily influenced by the COVID-19 pandemic. This is clear in both how the volume changes with the onset and subsequent re-opening of the city, especially noise complaints, and how new complaint types related to the pandemic arise (e.g. non-compliance with phased reopening, non-compliance with mask mandate etc.)
 - Weather data provides a small lift to prediction accuracy. In the case of a random forest model, mean temperature has the greatest impact in all the weather data variables. Autoregressive variables such as lags and trailing moving average, however, still have the strongest impact on prediciton accuracy.
